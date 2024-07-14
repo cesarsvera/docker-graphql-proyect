@@ -28,9 +28,11 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t cessvera/docker-graphql:1.0.1 .
+        docker build -t cessvera/docker-graphql:latest .
     - name: Push Docker image
       run: | 
         docker push cessvera/docker-graphql:1.0.1
+        docker push cessvera/docker-graphql:latest
 
 
 
